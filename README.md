@@ -67,4 +67,3 @@ So, in /boot/config/go, instead of :
 /boot/custom/etc/rc.d/S20-init.rsyncd
 one must use:
 bash /boot/custom/etc/rc.d/S20-init.rsyncd
-Reply

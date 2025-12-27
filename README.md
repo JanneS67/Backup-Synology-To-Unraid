@@ -48,3 +48,23 @@ Finally, add the following line in the file /boot/config/go :
 Now, either reboot or execute: 
 
     bash /boot/custom/etc/rc.d/S20-init.rsyncd
+
+
+
+
+
+    Valery Letroye
+27 September 2020
+
+As mentioned by Danny, since unraid 6.8, one must use bash in front of the command.
+
+It is mentioned in the 6.8 release notes that the security of the flash drive has been tightened and files located there can no longer have execute permission. Option now available are:
+– Add the command before the script name. E.g. bash scriptname
+– copy the script elsewhere and then give them execute permissions
+– use the User Scripts plugin to run the script.
+
+So, in /boot/config/go, instead of :
+/boot/custom/etc/rc.d/S20-init.rsyncd
+one must use:
+bash /boot/custom/etc/rc.d/S20-init.rsyncd
+Reply

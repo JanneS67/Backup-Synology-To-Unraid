@@ -40,8 +40,8 @@ Next, create a file /boot/custom/etc/rc.d/S20-init.rsyncd with the following con
 
 Finally, add the following line in the file /boot/config/go :
 
-    #!/bin/bash bash
-    /boot/custom/etc/rc.d/S20-init.rsyncd
+    #!/bin/bash
+    bash /boot/custom/etc/rc.d/S20-init.rsyncd
 
  
 
